@@ -1,0 +1,8 @@
+services:
+  server:
+    build:
+      context: https://github.com/carVertical/homework-backend.git
+    ports:
+      - "3000:3000"
+    environment:
+      ITEMS_PER_SECOND: 10000
