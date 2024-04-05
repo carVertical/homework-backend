@@ -19,8 +19,8 @@ To get the weather data call `GET /weather-data`. The data is streamed as a JSON
 {"city": string, "temperature": float}
 ```
 
-`GET /weather-data` also accepts a parameter `cities` to only get the data for the specified cities. The parameter value
-is a comma-separated case-insensitive list of city names.
+`GET /weather-data` also accepts a query parameter `cities` to only get the data for the specified cities. The parameter
+value is a comma-separated case-insensitive list of city names.
 
 The fastest way to test the service is with docker:
 ```shell
