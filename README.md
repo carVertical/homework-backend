@@ -22,10 +22,16 @@ To get the weather data call `GET /weather-data`. The data is streamed as a JSON
 `GET /weather-data` also accepts a parameter `cities` to only get the data for the specified cities. The parameter value
 is a comma-separated case-insensitive list of city names.
 
-The easiest way to launch the service is docker compose:
+The fastest way to test the service is with docker:
+```shell
+docker build -t weather-service https://github.com/carVertical/homework-backend.git
+docker run --rm -p 3000:3000 weather-service
+```
+
+Or as a less ephemeral approach with docker compose:
 ```yaml
 services:
-  server:
+  weather-service:
     build: https://github.com/carVertical/homework-backend.git
     ports:
       - "3000:3000"

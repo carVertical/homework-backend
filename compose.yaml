@@ -1,7 +1,7 @@
 services:
-  server:
+  weather-service:
     build:
-      context: https://github.com/carVertical/homework-backend.git
+      context: .
     ports:
       - "3000:3000"
     environment:

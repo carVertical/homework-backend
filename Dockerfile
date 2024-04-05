@@ -17,4 +17,4 @@ RUN --mount=type=bind,source=src,target=src \
 
 USER node
 
-CMD node dist/out.js
+ENTRYPOINT ["node", "dist/out.js"]
